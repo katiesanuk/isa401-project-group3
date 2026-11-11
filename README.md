@@ -39,7 +39,7 @@ and of their `business_intelligence` README with skills they used in this projec
 
 ## The Question
 
-[The research question or business problem, in one or two sentences.]
+How does the success of Ohio College football teams in the MAC lead to NFL draft picks?
 
 [Why it matters, and what makes it interesting or new compared with analyzing an existing dataset.]
 
