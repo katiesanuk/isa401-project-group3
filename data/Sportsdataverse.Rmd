@@ -1,0 +1,162 @@
+---
+title: "401Project"
+author: "Aashna Bhargava"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+install.packages("sportsdataverse", repos = c("https://sportsdataverse.r-universe.dev", getOption("repos")))
+```
+```{r}
+library(sportsdataverse)
+```
+
+```{r}
+library(cfbfastR)
+library(dplyr)
+
+register_cfbd(key = Sys.getenv("CFBD_API_KEY"))
+```
+
+```{r}
+library(cfbfastR)
+
+packageVersion("cfbfastR")
+```
+
+
+```{r}
+grep("register|key|auth", 
+     getNamespaceExports("cfbfastR"), 
+     value = TRUE, 
+     ignore.case = TRUE)
+```
+
+```{r}
+cfbfastR::has_cfbd_key()
+```
+
+```{r}
+cfbfastR::cfbd_api_key_info()
+```
+
+```{r}
+args(cfbfastR::cfbd_key)
+```
+
+```{r}
+cfbfastR::cfbd_key
+```
+
+```{r}
+readRenviron(".Renviron")
+
+cfbfastR::has_cfbd_key()
+```
+```{r}
+getwd()
+
+```
+
+```{r}
+file.exists("../.Renviron")
+```
+```{r}
+readRenviron("../.Renviron")
+
+cfbfastR::has_cfbd_key()
+```
+
+```{r}
+mac_2021 <- cfbfastR::cfbd_game_records(
+  year = 2021,
+  conference = "MAC"
+)
+
+View(mac_2021)
+```
+
+
+```{r}
+names(mac_2021)
+```
+```{r}
+mac_2021_clean <- mac_2021 |>
+  dplyr::select(
+    year,
+    team,
+    total_games,
+    total_wins,
+    total_losses,
+    conference_wins,
+    conference_losses,
+    postseason_games,
+    postseason_wins,
+    postseason_losses
+  )
+
+View(mac_2021_clean)
+```
+
+```{r}
+mac_2022 <- cfbfastR::cfbd_game_records(
+  year = 2022,
+  conference = "MAC"
+)
+
+View(mac_2022)
+```
+
+```{r}
+library(dplyr)
+
+mac_records_clean <- lapply(2021:2026, function(yr) {
+  cfbfastR::cfbd_game_records(
+    year = yr,
+    conference = "MAC"
+  )
+}) |>
+  bind_rows() |>
+  select(
+    year,
+    team,
+    total_games,
+    total_wins,
+    total_losses,
+    conference_wins,
+    conference_losses,
+    postseason_games,
+    postseason_wins,
+    postseason_losses
+  ) |>
+  arrange(year, team)
+
+View(mac_records_clean)
+```
+
+```{r}
+mac_records_clean <- mac_records_clean |>
+  group_by(year) |>
+  mutate(
+    conference_win_pct = conference_wins /
+      (conference_wins + conference_losses)
+  ) |>
+  arrange(
+    year,
+    desc(conference_win_pct),
+    desc(total_wins),
+    team
+  ) |>
+  mutate(
+    conference_rank = row_number()
+  ) |>
+  ungroup()
+
+View(mac_records_clean)
+```
+
