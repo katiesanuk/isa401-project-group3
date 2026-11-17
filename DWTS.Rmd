@@ -1,0 +1,95 @@
+---
+title: "Data Acquisition"
+author: "Katie Sanuk"
+date: "2026-11-11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(rvest)
+library(dplyr)
+library(stringr)
+
+base = "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_(American_TV_series)_season_"
+seasons = 1:35
+
+cast_pages = vector("list", length(seasons))
+week_pages = vector("list", length(seasons))
+
+for (i in seq_along(seasons)) {
+  
+  season_url = paste0(base, seasons[i])
+  pg = rvest::read_html(season_url)
+  
+  all_tables = pg |> rvest::html_table(fill = TRUE)
+  all_tables = lapply(all_tables, function(t) {
+    names(t) = make.names(names(t), unique = TRUE)
+    return(t)
+  })
+  
+  # 1. Casts Table: keep only Celebrity, Notability, Status, and season
+  cast_idx = which(sapply(all_tables, function(t) "Celebrity" %in% names(t) && "Notability" %in% names(t)))[1]
+  if (!is.na(cast_idx)) {
+    cast_pages[[i]] = all_tables[[cast_idx]] |>
+      dplyr::mutate(
+        season = seasons[i],
+        dplyr::across(dplyr::everything(), as.character)
+      ) |>
+      dplyr::select(dplyr::any_of(c("Celebrity", "Notability", "Status", "season")))
+  }
+  
+  # 2. Weekly Table: match any table with Couple and Dance
+  week_idx = which(sapply(all_tables, function(t) "Couple" %in% names(t) && "Dance" %in% names(t)))
+  
+  if (length(week_idx) > 0) {
+    season_weeks = vector("list", length(week_idx))
+    for (w in seq_along(week_idx)) {
+      
+      tbl = all_tables[[week_idx[w]]] |>
+        dplyr::mutate(
+          season = seasons[i],
+          week_table_num = w,
+          dplyr::across(dplyr::everything(), as.character)
+        )
+      
+      # Standardize score column name (handles "Score", "Scores", or "Judge.s.scores")
+      score_col = names(tbl)[stringr::str_detect(names(tbl), stringr::regex("score", ignore_case = TRUE))][1]
+      if (!is.na(score_col) && score_col != "Scores") {
+        names(tbl)[names(tbl) == score_col] = "Scores"
+      }
+      
+      # Only process if a valid Scores column exists in this table
+      if ("Scores" %in% names(tbl)) {
+        season_weeks[[w]] = tbl |>
+          dplyr::select(dplyr::any_of(c("Couple", "Scores", "Dance", "Result", "season", "week_table_num"))) |>
+          dplyr::filter(
+            !is.na(Scores),
+            stringr::str_trim(Scores) != "",
+            # Catches "No scores received", "No scoresreceived", "No score received", or "N/A" in any column
+            !stringr::str_detect(Couple, stringr::regex("no\\s*scores?\\s*received", ignore_case = TRUE)),
+            !stringr::str_detect(Scores, stringr::regex("no\\s*scores?\\s*received|n/a", ignore_case = TRUE))
+          )
+      }
+    }
+    week_pages[[i]] = dplyr::bind_rows(season_weeks)
+  }
+  
+  Sys.sleep(1)
+}
+
+dwts_casts  = dplyr::bind_rows(cast_pages)
+dwts_weekly = dplyr::bind_rows(week_pages)
+
+# Create a local "data" folder if it doesn't exist yet
+if (!dir.exists("data")) {
+  dir.create("data")
+}
+
+# Save both datasets to CSV
+readr::write_csv(dwts_casts, "data/dwts_casts.csv")
+readr::write_csv(dwts_weekly, "data/dwts_weekly.csv")
+```
