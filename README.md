@@ -39,7 +39,8 @@ and of their `business_intelligence` README with skills they used in this projec
 
 ## The Question
 
-How does the success of Ohio College football teams in the MAC lead to NFL draft picks?
+##FILLER
+How much of a celebrity's final placement and average judge score is driven by their assigned professional dancer
 
 [Why it matters, and what makes it interesting or new compared with analyzing an existing dataset.]
 
