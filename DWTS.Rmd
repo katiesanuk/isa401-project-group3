@@ -11,8 +11,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(rvest)
+library(httr)
+library(jsonlite)
 library(dplyr)
 library(stringr)
+library(tidyr)
+library(lubridate)
+
+ua = httr::user_agent("ISA401StudentProject/1.0 (Educational R Scraper)")
+
+read_wiki = function(url) {
+  res = httr::GET(url, ua)
+  httr::stop_for_status(res)
+  rvest::read_html(res)
+}
 
 base = "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_(American_TV_series)_season_"
 seasons = 1:35
@@ -23,7 +35,12 @@ week_pages = vector("list", length(seasons))
 for (i in seq_along(seasons)) {
   
   season_url = paste0(base, seasons[i])
-  pg = rvest::read_html(season_url)
+  pg = read_wiki(season_url)
+  
+  page_year = stringr::str_extract(
+    pg |> rvest::html_element("table.infobox") |> rvest::html_text(),
+    "20\\d{2}"
+  )
   
   all_tables = pg |> rvest::html_table(fill = TRUE)
   all_tables = lapply(all_tables, function(t) {
@@ -31,65 +48,206 @@ for (i in seq_along(seasons)) {
     return(t)
   })
   
-  # 1. Casts Table: keep only Celebrity, Notability, Status, and season
-  cast_idx = which(sapply(all_tables, function(t) "Celebrity" %in% names(t) && "Notability" %in% names(t)))[1]
+  # ----------------------------------------------------------------------------
+  # 1. Casts Table (Matches any table with Celebrity/Contestant AND Partner/Status/Notability)
+  # ----------------------------------------------------------------------------
+  cast_idx = which(sapply(all_tables, function(t) {
+    has_celeb  = any(stringr::str_detect(names(t), stringr::regex("celebrity|contestant", ignore_case = TRUE)))
+    has_role   = any(stringr::str_detect(names(t), stringr::regex("notability|known|occupation|partner", ignore_case = TRUE)))
+    has_status = any(stringr::str_detect(names(t), stringr::regex("status|result|place", ignore_case = TRUE)))
+    # Exclude weekly scoring tables (which have a "Dance" or "Score" column)
+    not_weekly = !any(stringr::str_detect(names(t), stringr::regex("dance|score", ignore_case = TRUE)))
+    has_celeb && has_role && has_status && not_weekly
+  }))[1]
+  
   if (!is.na(cast_idx)) {
-    cast_pages[[i]] = all_tables[[cast_idx]] |>
+    raw_cast = all_tables[[cast_idx]]
+    
+    celeb_col  = names(raw_cast)[stringr::str_detect(names(raw_cast), stringr::regex("celebrity|contestant", ignore_case = TRUE))][1]
+    role_col   = names(raw_cast)[stringr::str_detect(names(raw_cast), stringr::regex("notability|known|occupation", ignore_case = TRUE))][1]
+    status_col = names(raw_cast)[stringr::str_detect(names(raw_cast), stringr::regex("status|result|place", ignore_case = TRUE))][1]
+    
+    names(raw_cast)[names(raw_cast) == celeb_col] = "Celebrity"
+    if (!is.na(role_col)) {
+      names(raw_cast)[names(raw_cast) == role_col] = "Notability"
+    } else {
+      raw_cast$Notability = NA_character_
+    }
+    if (!is.na(status_col)) names(raw_cast)[names(raw_cast) == status_col] = "Status"
+    
+    cast_pages[[i]] = raw_cast |>
       dplyr::mutate(
-        season = seasons[i],
-        dplyr::across(dplyr::everything(), as.character)
+        season    = as.character(seasons[i]),
+        page_year = page_year,
+        dplyr::across(dplyr::everything(), as.character),
+        Celebrity = stringr::str_remove_all(Celebrity, "\\[.*?\\]") |> stringr::str_trim()
       ) |>
-      dplyr::select(dplyr::any_of(c("Celebrity", "Notability", "Status", "season")))
+      dplyr::filter(!is.na(Celebrity), Celebrity != "", !stringr::str_detect(Celebrity, stringr::regex("^celebrity$|^contestant$", ignore_case = TRUE))) |>
+      dplyr::select(dplyr::any_of(c("Celebrity", "Notability", "Status", "season", "page_year")))
+  } else {
+    message(sprintf("Warning: No Cast table matched on Season %d", seasons[i]))
   }
   
-  # 2. Weekly Table: match any table with Couple and Dance
-  week_idx = which(sapply(all_tables, function(t) "Couple" %in% names(t) && "Dance" %in% names(t)))
+  # ----------------------------------------------------------------------------
+  # 2. Weekly Tables (Substring match handles merged multi-row headers in S29-S34)
+  # ----------------------------------------------------------------------------
+  week_idx = which(sapply(all_tables, function(t) {
+    has_couple = any(stringr::str_detect(names(t), stringr::regex("couple|contestant|pair", ignore_case = TRUE)))
+    has_dance  = any(stringr::str_detect(names(t), stringr::regex("dance|style", ignore_case = TRUE)))
+    has_score  = any(stringr::str_detect(names(t), stringr::regex("score", ignore_case = TRUE)))
+    has_couple && has_dance && has_score
+  }))
   
   if (length(week_idx) > 0) {
     season_weeks = vector("list", length(week_idx))
+    
     for (w in seq_along(week_idx)) {
-      
       tbl = all_tables[[week_idx[w]]] |>
         dplyr::mutate(
-          season = seasons[i],
-          week_table_num = w,
+          season         = as.character(seasons[i]),
+          week_table_num = as.character(w),
           dplyr::across(dplyr::everything(), as.character)
         )
       
-      # Standardize score column name (handles "Score", "Scores", or "Judge.s.scores")
-      score_col = names(tbl)[stringr::str_detect(names(tbl), stringr::regex("score", ignore_case = TRUE))][1]
-      if (!is.na(score_col) && score_col != "Scores") {
-        names(tbl)[names(tbl) == score_col] = "Scores"
+      # When Wikipedia has a 2-row header (e.g., "Judge's scores" spanning 3 columns),
+      # html_table() splits scores across multiple columns ("Judge.s.scores", "Judge.s.scores.1", etc.)
+      couple_col = names(tbl)[stringr::str_detect(names(tbl), stringr::regex("couple|contestant|pair", ignore_case = TRUE))][1]
+      dance_col  = names(tbl)[stringr::str_detect(names(tbl), stringr::regex("dance|style", ignore_case = TRUE))][1]
+      result_col = names(tbl)[stringr::str_detect(names(tbl), stringr::regex("result|status", ignore_case = TRUE))][1]
+      score_cols = names(tbl)[stringr::str_detect(names(tbl), stringr::regex("score", ignore_case = TRUE))]
+      
+      if (!is.na(couple_col)) names(tbl)[names(tbl) == couple_col] = "Couple"
+      if (!is.na(dance_col))  names(tbl)[names(tbl) == dance_col]  = "Dance"
+      if (!is.na(result_col)) names(tbl)[names(tbl) == result_col] = "Result"
+      
+      # Combine multiple judge score columns into a single "Scores" string if split across columns
+      if (length(score_cols) > 1) {
+        tbl$Scores = apply(tbl[, score_cols, drop = FALSE], 1, function(r) paste(na.omit(r[r != ""]), collapse = ", "))
+      } else if (length(score_cols) == 1) {
+        names(tbl)[names(tbl) == score_cols[1]] = "Scores"
       }
       
-      # Only process if a valid Scores column exists in this table
       if ("Scores" %in% names(tbl)) {
         season_weeks[[w]] = tbl |>
           dplyr::select(dplyr::any_of(c("Couple", "Scores", "Dance", "Result", "season", "week_table_num"))) |>
           dplyr::filter(
             !is.na(Scores),
             stringr::str_trim(Scores) != "",
-            # Catches "No scores received", "No scoresreceived", "No score received", or "N/A" in any column
-            !stringr::str_detect(Couple, stringr::regex("no\\s*scores?\\s*received", ignore_case = TRUE)),
-            !stringr::str_detect(Scores, stringr::regex("no\\s*scores?\\s*received|n/a", ignore_case = TRUE))
+            !stringr::str_detect(Couple, stringr::regex("^couple$|^contestant$|no\\s*scores?\\s*received", ignore_case = TRUE)),
+            !stringr::str_detect(Scores, stringr::regex("score|no\\s*scores?\\s*received|n/a", ignore_case = TRUE))
+          ) |>
+          tidyr::separate(
+            col   = Couple,
+            into  = c("celebrity_name_short", "pro_name_short"),
+            sep   = "\\s*&\\s*|\\s+and\\s+",
+            extra = "merge",
+            fill  = "right"
+          ) |>
+          dplyr::mutate(
+            celebrity_name_short = stringr::str_remove_all(celebrity_name_short, "\\[.*?\\]") |> stringr::str_trim(),
+            pro_name_short       = stringr::str_remove_all(pro_name_short, "\\[.*?\\]") |> stringr::str_trim()
           )
       }
     }
     week_pages[[i]] = dplyr::bind_rows(season_weeks)
+  } else {
+    message(sprintf("Warning: No Weekly tables matched on Season %d", seasons[i]))
   }
   
-  Sys.sleep(1)
+  Sys.sleep(0.3)
 }
 
-dwts_casts  = dplyr::bind_rows(cast_pages)
-dwts_weekly = dplyr::bind_rows(week_pages)
+dwts_casts_raw = dplyr::bind_rows(cast_pages)
+dwts_weekly    = dplyr::bind_rows(week_pages)
 
-# Create a local "data" folder if it doesn't exist yet
-if (!dir.exists("data")) {
-  dir.create("data")
+cat("Casts seasons captured:", length(unique(dwts_casts_raw$season)), "of 35\n")
+cat("Weekly seasons captured:", length(unique(dwts_weekly$season)), "of 35\n")
+
+# ------------------------------------------------------------------------------
+# 3. Look Up Each Celebrity's Birth Date (<span class="bday">) Directly by Name
+# ------------------------------------------------------------------------------
+get_birth_date_by_name = function(celeb_name, idx, total) {
+  if (idx %% 25 == 0) message(sprintf("Fetching birth date %d of %d (%s)...", idx, total, celeb_name))
+  if (is.na(celeb_name) || celeb_name == "") return(NA_character_)
+  
+  Sys.sleep(0.25)
+  
+  direct_slug = utils::URLencode(stringr::str_replace_all(celeb_name, " ", "_"), reserved = TRUE)
+  direct_url  = paste0("https://en.wikipedia.org/wiki/", direct_slug)
+  
+  bday = tryCatch({
+    pg = read_wiki(direct_url)
+    pg |> rvest::html_element("span.bday") |> rvest::html_text(trim = TRUE)
+  }, error = function(e) NA_character_)
+  
+  if (!is.na(bday) && bday != "") return(bday)
+  
+  tryCatch({
+    api_res = httr::GET(
+      "https://en.wikipedia.org/w/api.php",
+      query = list(action = "opensearch", search = celeb_name, limit = 1, format = "json"),
+      ua
+    )
+    parsed = jsonlite::fromJSON(httr::content(api_res, "text", encoding = "UTF-8"))
+    if (length(parsed) >= 4 && length(parsed[[4]]) > 0) {
+      alt_url = parsed[[4]][1]
+      if (alt_url != direct_url) {
+        pg2 = read_wiki(alt_url)
+        bday2 = pg2 |> rvest::html_element("span.bday") |> rvest::html_text(trim = TRUE)
+        if (!is.na(bday2) && bday2 != "") return(bday2)
+      }
+    }
+    return(NA_character_)
+  }, error = function(e) NA_character_)
 }
 
-# Save both datasets to CSV
-readr::write_csv(dwts_casts, "data/dwts_casts.csv")
-readr::write_csv(dwts_weekly, "data/dwts_weekly.csv")
+unique_celebs = unique(na.omit(dwts_casts_raw$Celebrity))
+bday_strings = mapply(
+  get_birth_date_by_name,
+  celeb_name = unique_celebs,
+  idx        = seq_along(unique_celebs),
+  total      = length(unique_celebs),
+  USE.NAMES  = FALSE
+)
+
+bday_lookup = tibble::tibble(
+  Celebrity  = unique_celebs,
+  birth_date = lubridate::ymd(bday_strings)
+)
+
+dwts_casts = dwts_casts_raw |>
+  dplyr::left_join(bday_lookup, by = "Celebrity") |>
+  dplyr::mutate(
+    status_mdy  = lubridate::mdy(stringr::str_extract(
+      Status,
+      "(January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{1,2},\\s+\\d{4}"
+    )),
+    status_dmy  = lubridate::dmy(stringr::str_extract(
+      Status,
+      "\\d{1,2}\\s+(January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{4}"
+    )),
+    status_date = dplyr::coalesce(status_mdy, status_dmy)
+  ) |>
+  dplyr::group_by(season) |>
+  dplyr::mutate(
+    earliest_status = suppressWarnings(min(status_date, na.rm = TRUE)),
+    season_start = dplyr::if_else(
+      is.finite(earliest_status),
+      earliest_status - lubridate::days(7),
+      lubridate::ymd(paste0(dplyr::first(page_year), "-09-15"))
+    )
+  ) |>
+  dplyr::ungroup() |>
+  dplyr::mutate(
+    age_on_show = as.integer(floor(as.numeric(difftime(season_start, birth_date, units = "days")) / 365.25))
+  ) |>
+  dplyr::select(Celebrity, Notability, Status, season, age_on_show)
+
+# ------------------------------------------------------------------------------
+# 4. Save Both Final CSVs
+# ------------------------------------------------------------------------------
+dir.create("data", showWarnings = FALSE, recursive = TRUE)
+write.csv(dwts_casts, file.path("data", "dwts_casts.csv"), row.names = FALSE)
+write.csv(dwts_weekly, file.path("data", "dwts_weekly.csv"), row.names = FALSE)
 ```
+
