@@ -219,7 +219,7 @@ View(season_1_full)
 
 # Check if any information is missing
 season_1_full |>
-  filter(is.na(from) | is.na(age)
+  filter(is.na(from) | is.na(age))
 
 ```
 
