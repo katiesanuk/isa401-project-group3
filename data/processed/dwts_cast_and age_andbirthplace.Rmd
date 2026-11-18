@@ -11,13 +11,95 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 
+# Only run this line if packages aren't installed
+install.packages(c(
+  "rvest", "dplyr", "purrr", "stringr",
+  "tibble", "tidyr", "lubridate", "xml2"
+))
+
+library(rvest)
+library(dplyr)
+library(purrr)
+library(stringr)
+library(tibble)
+library(tidyr)
+library(lubridate)
+library(xml2)
+
+```
+
+
+```{r}
+
+get_season_celebrities <- function(season_num) {
+
+  url <- paste0(
+    "https://en.wikipedia.org/wiki/",
+    "Dancing_with_the_Stars_(American_TV_series)_season_",
+    season_num
+  )
+
+  page <- read_html(url)
+
+  # Find the cast table
+  tables <- page |> html_elements("table.wikitable")
+
+  cast_table <- keep(tables, function(x) {
+    headers <- x |> html_elements("th") |> html_text2()
+
+    any(headers == "Celebrity") &&
+      any(headers == "Notability")
+  }) |> pluck(1)
+
+  # Extract table data
+  data <- cast_table |> html_table(fill = TRUE)
+
+  # Extract celebrity Wikipedia links
+  rows <- cast_table |> html_elements("tr")
+
+  links <- map_chr(rows[-1], function(row) {
+
+    link <- row |> html_element("a[href*='/wiki/']")
+
+    if (inherits(link, "xml_missing")) {
+      return(NA_character_)
+    }
+
+    url_absolute(
+      html_attr(link, "href"),
+      "https://en.wikipedia.org"
+    )
+  })
+
+  tibble(
+    season = season_num,
+    celebrity = data[[1]],
+    profession = data[[2]],
+    wiki_url = links
+  )
+}
+
+```
+
+
+```{r}
+
+season_1 <- get_season_celebrities(1)
+
+View(season_1)
+
+```
+
+
+```{r}
 
 get_person_info <- function(url) {
 
   Sys.sleep(1)
+
   page <- read_html(url)
 
-  # Birthday
+  # Get birthday
   birth_node <- page |> html_element(".bday")
 
   birthday <- if (inherits(birth_node, "xml_missing")) {
@@ -26,7 +108,7 @@ get_person_info <- function(url) {
     suppressWarnings(as.Date(html_text2(birth_node)))
   }
 
-  # Find the birth-place element in the infobox
+  # Find birthplace element
   place_node <- page |>
     html_element(".infobox .birthplace, .infobox .birth-place")
 
@@ -36,15 +118,43 @@ get_person_info <- function(url) {
     html_text2(place_node)
   }
 
+  # Fallback: find birthplace in Born row
+  if (is.na(birthplace)) {
+
+    born_rows <- page |>
+      html_elements("table.infobox tr") |>
+      keep(function(row) {
+        header <- row |> html_element("th")
+
+        !inherits(header, "xml_missing") &&
+          str_detect(html_text2(header), "^Born$")
+      })
+
+    if (length(born_rows) > 0) {
+
+      cell <- born_rows[[1]] |> html_element("td")
+
+      # Extract location links from the Born row
+      places <- cell |>
+        html_elements("a[href]") |>
+        html_text2()
+
+      # Remove empty links
+      places <- places[nzchar(places)]
+
+      if (length(places) > 0) {
+        birthplace <- paste(places, collapse = ", ")
+      }
+    }
+  }
+
   tibble(
     from = birthplace,
     birthday = birthday
   )
 }
 
-
 ```
-
 
 ```{r}
 
@@ -65,16 +175,26 @@ season_1_full <- season_1 |>
   unnest(info) |>
   mutate(
     premiere_date = as.Date("2005-06-01"),
+
     age = as.integer(
-      floor(time_length(
-        interval(birthday, premiere_date),
-        "years"
-      ))
+      floor(
+        time_length(
+          interval(birthday, premiere_date),
+          "years"
+        )
+      )
     )
   ) |>
-  select(season, celebrity, from, profession, age)
+  select(
+    season,
+    celebrity,
+    from,
+    profession,
+    age
+  )
 
 ```
+
 
 ```{r}
 
@@ -88,6 +208,18 @@ season_1_full <- season_1_full |>
   )
 
 View(season_1_full)
+
+```
+
+
+```{r}
+
+# View all celebrity information
+View(season_1_full)
+
+# Check if any information is missing
+season_1_full |>
+  filter(is.na(from) | is.na(age)
 
 ```
 
