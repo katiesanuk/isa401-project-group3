@@ -51,9 +51,9 @@ LLM extraction from text).
 
 | Source | Link | Method | One row is | Code |
 |---|---|---|---|---|
-| [name] | [url] | [web scraping / API / LLM extraction] | [one listing on one date] | `markdowns/01_acquire.Rmd` |
-| [name] | [url] | [ ] | [ ] | [ ] |
-| [name] | [url] | [ ] | [ ] | [ ] |
+| [Wikipedia — Dancing with the Stars (U.S.) Season Cast Tables (Seasons 1–35)] | [[https://en.wikipedia.org/wiki/Dancing_with_the_Stars_(American_TV_series)_season_1](through _season_35)] | [web scraping ] | [One celebrity contestant in one season (dwts_casts.csv)] | `markdowns/01_acquire.Rmd` |
+| [Wikipedia — Dancing with the Stars (U.S.) Season Weekly Scoring Tables (Seasons 1–35)] | [[https://en.wikipedia.org/wiki/Dancing_with_the_Stars_(American_TV_series)_season_1](through _season_35)] | [web scraping ] | [One dance performance/score entry for a couple in a given week and season (dwts_weekly.csv) ] | [ ] |
+| [Wikipedia — Individual Contestant Biography Pages (Infoboxes)] | [Individual celebrity Wikipedia URLs (wiki_url from Season 1 cast table)] | [web scraping ] | [One celebrity contestant's hometown (from) and age at season premiere (season_1_full) ] | [ ] |
 
 ## Pipeline
 
