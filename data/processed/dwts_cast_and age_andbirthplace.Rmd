@@ -1,0 +1,93 @@
+---
+title: "dwts_cast_info"
+author: "Aashna Bhargava"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+
+get_person_info <- function(url) {
+
+  Sys.sleep(1)
+  page <- read_html(url)
+
+  # Birthday
+  birth_node <- page |> html_element(".bday")
+
+  birthday <- if (inherits(birth_node, "xml_missing")) {
+    as.Date(NA)
+  } else {
+    suppressWarnings(as.Date(html_text2(birth_node)))
+  }
+
+  # Find the birth-place element in the infobox
+  place_node <- page |>
+    html_element(".infobox .birthplace, .infobox .birth-place")
+
+  birthplace <- if (inherits(place_node, "xml_missing")) {
+    NA_character_
+  } else {
+    html_text2(place_node)
+  }
+
+  tibble(
+    from = birthplace,
+    birthday = birthday
+  )
+}
+
+
+```
+
+
+```{r}
+
+season_1_full <- season_1 |>
+  mutate(
+    info = map(wiki_url, function(url) {
+      tryCatch(
+        get_person_info(url),
+        error = function(e) {
+          tibble(
+            from = NA_character_,
+            birthday = as.Date(NA)
+          )
+        }
+      )
+    })
+  ) |>
+  unnest(info) |>
+  mutate(
+    premiere_date = as.Date("2005-06-01"),
+    age = as.integer(
+      floor(time_length(
+        interval(birthday, premiere_date),
+        "years"
+      ))
+    )
+  ) |>
+  select(season, celebrity, from, profession, age)
+
+```
+
+```{r}
+
+season_1_full <- season_1_full |>
+  mutate(
+    from = case_when(
+      celebrity == "Trista Sutter" ~ "St. Louis, Missouri",
+      celebrity == "Evander Holyfield" ~ "Atlanta, Georgia",
+      TRUE ~ from
+    )
+  )
+
+View(season_1_full)
+
+```
+
