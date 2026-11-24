@@ -1,369 +1,3 @@
-<<<<<<< HEAD
-"Celebrity","celebrity_url","Notability","Status","season","age_on_show"
-"Trista Sutter",NA,"The Bachelorette star","Eliminated 1ston June 8, 2005","1",NA
-"Evander Holyfield",NA,"Heavyweight boxer","Eliminated 2ndon June 15, 2005","1",NA
-"Rachel Hunter",NA,"Supermodel","Eliminated 3rdon June 22, 2005","1",NA
-"Joey McIntyre",NA,"New Kids on the Block singer","Eliminated 4thon June 29, 2005","1",NA
-"John O'Hurley",NA,"Television actor & game show host","Runners-upon July 6, 2005","1",NA
-"Kelly Monaco",NA,"General Hospital actress","Winners on July 6, 2005","1",NA
-"Kenny Mayne",NA,"ESPN anchorman","Eliminated 1ston January 6, 2006","2",NA
-"Tatum O'Neal",NA,"Film actress","Eliminated 2ndon January 13, 2006","2",NA
-"Giselle Fernandez",NA,"Television journalist","Eliminated 3rdon January 20, 2006","2",NA
-"Master P",NA,"Rapper & entrepreneur","Eliminated 4thon January 27, 2006","2",NA
-"Tia Carrere",NA,"Actress & model","Eliminated 5thon February 3, 2006","2",NA
-"George Hamilton",NA,"Actor","Eliminated 6thon February 10, 2006","2",NA
-"Lisa Rinna",NA,"Television actress & host","Eliminated 7thon February 17, 2006","2",NA
-"Stacy Keibler",NA,"WWE Diva","Third placeon February 26, 2006","2",NA
-"Jerry Rice",NA,"NFL wide receiver","Runners-upon February 26, 2006","2",NA
-"Drew Lachey",NA,"98 Degrees singer","Winnerson February 26, 2006","2",NA
-"Tucker Carlson",NA,"News anchor & commentator","Eliminated 1ston September 13, 2006","3",NA
-"Shanna Moakler",NA,"Model, actress & reality television personality","Eliminated 2ndon September 20, 2006","3",NA
-"Harry Hamlin",NA,"Film & television actor","Eliminated 3rdon September 27, 2006","3",NA
-"Vivica A. Fox",NA,"Film actress & producer","Eliminated 4thon October 4, 2006","3",NA
-"Willa Ford",NA,"Pop singer & actress","Eliminated 5thon October 11, 2006","3",NA
-"Sara Evans",NA,"Country music singer","Withdrewon October 13, 2006","3",NA
-"Jerry Springer",NA,"Talk show host","Eliminated 6thon October 25, 2006","3",NA
-"Monique Coleman",NA,"High School Musical actress","Eliminated 7thon November 1, 2006","3",NA
-"Joey Lawrence",NA,"Television actor","Eliminated 8thon November 8, 2006","3",NA
-"Mario Lopez",NA,"Television actor & host","Runners-upon November 15, 2006","3",NA
-"Emmitt Smith",NA,"NFL running back","Winnerson November 15, 2006","3",NA
-"Paulina Porizkova",NA,"Supermodel","Eliminated 1ston March 26, 2007","4",NA
-"Shandi Finnessey",NA,"Miss USA 2004","Eliminated 2ndon April 3, 2007","4",NA
-"Leeza Gibbons",NA,"Talk-show host","Eliminated 3rdon April 10, 2007","4",NA
-"Clyde Drexler",NA,"NBA player","Eliminated 4thon April 17, 2007","4",NA
-"Heather Mills",NA,"Model & charity campaigner","Eliminated 5thon April 24, 2007","4",NA
-"John Ratzenberger",NA,"Film & television actor & author","Eliminated 6thon May 1, 2007","4",NA
-"Billy Ray Cyrus",NA,"Country music singer & actor","Eliminated 7thon May 8, 2007","4",NA
-"Ian Ziering",NA,"Television actor","Eliminated 8thon May 15, 2007","4",NA
-"Laila Ali",NA,"Professional boxer","Third placeon May 22, 2007","4",NA
-"Joey Fatone",NA,"NSYNC singer & actor","Runners-upon May 22, 2007","4",NA
-"Apolo Anton Ohno",NA,"Olympic speed skater","Winnerson May 22, 2007","4",NA
-"Josie Maran",NA,"Model & actress","Eliminated 1ston September 25, 2007","5",NA
-"Albert Reed",NA,"Supermodel","Eliminated 2ndon October 2, 2007","5",NA
-"Wayne Newton",NA,"Las Vegas entertainer","Eliminated 3rdon October 9, 2007","5",NA
-"Floyd Mayweather Jr.",NA,"Professional boxer","Eliminated 4thon October 16, 2007","5",NA
-"Mark Cuban",NA,"Dallas Mavericks owner & entrepreneur","Eliminated 5thon October 23, 2007","5",NA
-"Sabrina Bryan",NA,"The Cheetah Girls singer & actress","Eliminated 6thon October 30, 2007","5",NA
-"Jane Seymour",NA,"Film & television actress","Eliminated 7thon November 6, 2007","5",NA
-"Cameron Mathison",NA,"All My Children actor & TV host","Eliminated 8thon November 13, 2007","5",NA
-"Jennie Garth",NA,"Television actress","Eliminated 9thon November 20, 2007","5",NA
-"Marie Osmond",NA,"Entertainer","Third placeon November 27, 2007","5",NA
-"Mel B",NA,"Spice Girls singer","Runners-upon November 27, 2007","5",NA
-"Hélio Castroneves",NA,"Indy 500 champion","Winnerson November 27, 2007","5",NA
-"Penn Jillette",NA,"Magician","Eliminated 1ston March 25, 2008","6",NA
-"Monica Seles",NA,"Professional tennis player","Eliminated 2ndon March 25, 2008","6",NA
-"Steve Guttenberg",NA,"Film actor","Eliminated 3rdon April 1, 2008","6",NA
-"Adam Carolla",NA,"Comedian & radio host","Eliminated 4thon April 8, 2008","6",NA
-"Priscilla Presley",NA,"Actress & businesswoman","Eliminated 5thon April 15, 2008","6",NA
-"Marlee Matlin",NA,"Film & television actress","Eliminated 6thon April 22, 2008","6",NA
-"Shannon Elizabeth",NA,"American Pie actress","Eliminated 7thon April 29, 2008","6",NA
-"Mario",NA,"R&B singer","Eliminated 8thon May 6, 2008","6",NA
-"Marissa Jaret Winokur",NA,"Broadway actress","Eliminated 9thon May 13, 2008","6",NA
-"Cristián de la Fuente",NA,"Film & television actor","Third placeon May 19, 2008","6",NA
-"Jason Taylor",NA,"NFL defensive end","Runners-upon May 20, 2008","6",NA
-"Kristi Yamaguchi",NA,"Olympic figure skater","Winnerson May 20, 2008","6",NA
-"Jeffrey Ross",NA,"Stand-up comedian","Eliminated 1ston September 23, 2008","7",NA
-"Ted McGinley",NA,"Film & television actor","Eliminated 2ndon September 24, 2008","7",NA
-"Kim Kardashian",NA,"Reality television personality","Eliminated 3rdon September 30, 2008","7",NA
-"Misty May-Treanor",NA,"Olympic beach volleyball player","Withdrewon October 6, 2008","7",NA
-"Rocco DiSpirito",NA,"Celebrity chef & author","Eliminated 4thon October 14, 2008","7",NA
-"Toni Braxton",NA,"Singer-songwriter","Eliminated 5thon October 21, 2008","7",NA
-"Cloris Leachman",NA,"Film & television actress","Eliminated 6thon October 28, 2008","7",NA
-"Susan Lucci",NA,"All My Children actress","Eliminated 7thon November 5, 2008","7",NA
-"Maurice Greene",NA,"Olympic sprinter","Eliminated 8thon November 11, 2008","7",NA
-"Cody Linley",NA,"Hannah Montana actor","Eliminated 9thon November 18, 2008","7",NA
-"Lance Bass",NA,"NSYNC singer","Third placeon November 25, 2008","7",NA
-"Warren Sapp",NA,"NFL defensive tackle","Runners-upon November 25, 2008","7",NA
-"Brooke Burke",NA,"Model & television host","Winnerson November 25, 2008","7",NA
-"Belinda Carlisle",NA,"Singer-songwriter","Eliminated 1ston March 17, 2009","8",NA
-"Denise Richards",NA,"Actress","Eliminated 2ndon March 24, 2009","8",NA
-"Holly Madison",NA,"Playboy model & reality television personality","Eliminated 3rdon March 31, 2009","8",NA
-"Steve Wozniak",NA,"Apple co-founder","Eliminated 4thon March 31, 2009","8",NA
-"David Alan Grier",NA,"Actor & comedian","Eliminated 5thon April 7, 2009","8",NA
-"Steve-O",NA,"Jackass star","Eliminated 6thon April 14, 2009","8",NA
-"Lawrence Taylor",NA,"NFL linebacker","Eliminated 7thon April 21, 2009","8",NA
-"Chuck Wicks",NA,"Country singer","Eliminated 8thon April 28, 2009","8",NA
-"Lil' Kim",NA,"Rapper","Eliminated 9thon May 5, 2009","8",NA
-"Ty Murray",NA,"Rodeo cowboy","Eliminated 10thon May 12, 2009","8",NA
-"Melissa Rycroft",NA,"The Bachelor contestant","Third placeon May 19, 2009","8",NA
-"Gilles Marini",NA,"Actor","Runners-upon May 19, 2009","8",NA
-"Shawn Johnson",NA,"Olympic artistic gymnast","Winnerson May 19, 2009","8",NA
-"Ashley Hamilton",NA,"Actor & comedian","Eliminated 1ston September 23, 2009","9",NA
-"Macy Gray",NA,"R&B singer","Eliminated 2ndon September 23, 2009","9",NA
-"Kathy Ireland",NA,"Model & entrepreneur","Eliminated 3rdon September 29, 2009","9",NA
-"Tom DeLay",NA,"U.S. House Majority Leader","Withdrewon October 6, 2009","9",NA
-"Debi Mazar",NA,"Film & television actress","Eliminated 4thon October 6, 2009","9",NA
-"Chuck Liddell",NA,"UFC fighter","Eliminated 5thon October 13, 2009","9",NA
-"Natalie Coughlin",NA,"Olympic swimmer","Eliminated 6thon October 20, 2009","9",NA
-"Melissa Joan Hart",NA,"Television actress","Eliminated 7thon October 27, 2009","9",NA
-"Louie Vito",NA,"Snowboarder","Eliminated 8thon October 27, 2009","9",NA
-"Michael Irvin",NA,"NFL wide receiver for the Dallas Cowboys","Eliminated 9thon November 3, 2009","9",NA
-"Mark Dacascos",NA,"Iron Chef America chairman","Eliminated 10thon November 3, 2009","9",NA
-"Aaron Carter",NA,"Singer & actor","Eliminated 11thon November 10, 2009","9",NA
-"Joanna Krupa",NA,"Model & actress","Eliminated 12thon November 17, 2009","9",NA
-"Kelly Osbourne",NA,"Reality television personality & singer","Third placeon November 24, 2009","9",NA
-"Mýa",NA,"Singer-songwriter & actress","Runners-upon November 24, 2009","9",NA
-"Donny Osmond",NA,"Singer & actor","Winnerson November 24, 2009","9",NA
-"Shannen Doherty",NA,"Film & television actress","Eliminated 1ston March 30, 2010","10",NA
-"Buzz Aldrin",NA,"Apollo 11 astronaut","Eliminated 2ndon April 6, 2010","10",NA
-"Aiden Turner",NA,"All My Children actor","Eliminated 3rdon April 13, 2010","10",NA
-"Kate Gosselin",NA,"Reality television personality","Eliminated 4thon April 20, 2010","10",NA
-"Jake Pavelka",NA,"The Bachelor star","Eliminated 5thon April 27, 2010","10",NA
-"Pamela Anderson",NA,"Playboy model & actress","Eliminated 6thon May 4, 2010","10",NA
-"Niecy Nash",NA,"Comedian, actress & host","Eliminated 7thon May 11, 2010","10",NA
-"Chad Ochocinco",NA,"NFL wide receiver","Eliminated 8thon May 18, 2010","10",NA
-"Erin Andrews",NA,"ESPN sportscaster","Third placeon May 24, 2010","10",NA
-"Evan Lysacek",NA,"Olympic figure skater","Runners-upon May 25, 2010","10",NA
-"Nicole Scherzinger",NA,"Pussycat Dolls singer","Winnerson May 25, 2010","10",NA
-"David Hasselhoff",NA,"Actor & singer","Eliminated 1ston September 21, 2010","11",NA
-"Michael Bolton",NA,"Singer-songwriter","Eliminated 2ndon September 28, 2010","11",NA
-"Margaret Cho",NA,"Stand-up comedian","Eliminated 3rdon October 5, 2010","11",NA
-"The Situation",NA,"Jersey Shore cast member","Eliminated 4thon October 12, 2010","11",NA
-"Florence Henderson",NA,"The Brady Bunch actress","Eliminated 5thon October 19, 2010","11",NA
-"Audrina Patridge",NA,"The Hills cast member","Eliminated 6thon October 26, 2010","11",NA
-"Rick Fox",NA,"NBA small forward","Eliminated 7thon November 2, 2010","11",NA
-"Kurt Warner",NA,"NFL quarterback","Eliminated 8thon November 9, 2010","11",NA
-"Brandy",NA,"Singer & actress","Eliminated 9thon November 16, 2010","11",NA
-"Bristol Palin",NA,"Activist, author & daughter of Sarah Palin","Third placeon November 23, 2010","11",NA
-"Kyle Massey",NA,"Disney Channel actor & rapper","Runners-upon November 23, 2010","11",NA
-"Jennifer Grey",NA,"Film & television actress","Winnerson November 23, 2010","11",NA
-"Mike Catherwood",NA,"Radio personality","Eliminated 1ston March 29, 2011","12",NA
-"Wendy Williams",NA,"Talk show host & author","Eliminated 2ndon April 5, 2011","12",NA
-"Sugar Ray Leonard",NA,"Professional boxer","Eliminated 3rdon April 12, 2011","12",NA
-"Petra Němcová",NA,"Supermodel","Eliminated 4thon April 19, 2011","12",NA
-"Chris Jericho",NA,"Professional wrestler and Musician","Eliminated 5thon April 26, 2011","12",NA
-"Kendra Wilkinson",NA,"Model & reality television personality","Eliminated 6thon May 3, 2011","12",NA
-"Romeo",NA,"Rapper & actor","Eliminated 7thon May 10, 2011","12",NA
-"Ralph Macchio",NA,"Film actor","Eliminated 8thon May 17, 2011","12",NA
-"Chelsea Kane",NA,"Disney Channel actress","Third placeon May 24, 2011","12",NA
-"Kirstie Alley",NA,"Film & television actress","Runners-upon May 24, 2011","12",NA
-"Hines Ward",NA,"NFL wide receiver","Winnerson May 24, 2011","12",NA
-"Ron Artest",NA,"NBA small forward","Eliminated 1ston September 20, 2011","13",NA
-"Elisabetta Canalis",NA,"Model & actress","Eliminated 2ndon September 27, 2011","13",NA
-"Kristin Cavallari",NA,"Reality television personality","Eliminated 3rdon October 4, 2011","13",NA
-"Chynna Phillips",NA,"Wilson Phillips singer & solo artist","Eliminated 4thon October 11, 2011","13",NA
-"Carson Kressley",NA,"Television host","Eliminated 5thon October 18, 2011","13",NA
-"Chaz Bono",NA,"Transgender activist & author","Eliminated 6thon October 25, 2011","13",NA
-"David Arquette",NA,"Actor","Eliminated 7thon November 1, 2011","13",NA
-"Nancy Grace",NA,"HLN host & prosecutor","Eliminated 8thon November 8, 2011","13",NA
-"Hope Solo",NA,"U.S. national soccer team goalkeeper","Eliminated 9thon November 15, 2011","13",NA
-"Ricki Lake",NA,"Actress & talk show host","Third placeon November 22, 2011","13",NA
-"Rob Kardashian",NA,"Reality television personality","Runners-upon November 22, 2011","13",NA
-"J. R. Martinez",NA,"Actor & Army veteran","Winnerson November 22, 2011","13",NA
-"Martina Navratilova",NA,"Professional tennis player","Eliminated 1ston March 27, 2012","14",NA
-"Jack Wagner",NA,"Actor & singer","Eliminated 2ndon April 3, 2012","14",NA
-"Sherri Shepherd",NA,"The View panelist & actress","Eliminated 3rdon April 10, 2012","14",NA
-"Gavin DeGraw",NA,"Singer-songwriter","Eliminated 4thon April 17, 2012","14",NA
-"Gladys Knight",NA,"Soul singer","Eliminated 5thon April 24, 2012","14",NA
-"Jaleel White",NA,"Television actor","Eliminated 6thon May 1, 2012","14",NA
-"Roshon Fegan",NA,"Disney Channel actor & rapper","Eliminated 7thon May 8, 2012","14",NA
-"Melissa Gilbert",NA,"Actress","Eliminated 8thon May 8, 2012","14",NA
-"Maria Menounos",NA,"Television host","Eliminated 9thon May 15, 2012","14",NA
-"William Levy",NA,"Telenovela actor","Third placeon May 22, 2012","14",NA
-"Katherine Jenkins",NA,"Classical singer","Runners-upon May 22, 2012","14",NA
-"Donald Driver",NA,"NFL wide receiver for Green Bay Packers","Winnerson May 22, 2012","14",NA
-"Pamela AndersonSeason 10",NA,"Film & television actress","Eliminated 1ston September 25, 2012","15",NA
-"Joey FatoneSeason 4",NA,"NSYNC singer & actor","Eliminated 2ndon October 2, 2012","15",NA
-"Drew LacheySeason 2",NA,"Singer & actor","Eliminated 3rdon October 9, 2012","15",NA
-"Hélio CastronevesSeason 5",NA,"Indy 500 champion","Eliminated 4thon October 9, 2012","15",NA
-"Bristol PalinSeason 11",NA,"Activist & author","Eliminated 5thon October 16, 2012","15",NA
-"Sabrina BryanSeason 5",NA,"Singer & actress","Eliminated 6thon October 30, 2012","15",NA
-"Kirstie AlleySeason 12",NA,"Film & television actress","Eliminated 7thon November 13, 2012","15",NA
-"Gilles MariniSeason 8",NA,"Film & television actor","Eliminated 8thon November 13, 2012","15",NA
-"Apolo Anton OhnoSeason 4",NA,"Olympic speed skater","Eliminated 9thon November 20, 2012","15",NA
-"Emmitt SmithSeason 3",NA,"NFL player","Eliminated 10thon November 20, 2012","15",NA
-"Kelly MonacoSeason 1",NA,"Model & actress","Third placeon November 27, 2012","15",NA
-"Shawn JohnsonSeason 8",NA,"Olympic artistic gymnast","Runners-upon November 27, 2012","15",NA
-"Melissa RycroftSeason 8",NA,"Television host","Winnerson November 27, 2012","15",NA
-"Dorothy Hamill",NA,"Olympic figure skater","Withdrewon March 26, 2013","16",NA
-"Wynonna Judd",NA,"Country music singer","Eliminated 1ston April 2, 2013","16",NA
-"Lisa Vanderpump",NA,"Reality television personality","Eliminated 2ndon April 9, 2013","16",NA
-"D.L. Hughley",NA,"Comedian & television actor","Eliminated 3rdon April 16, 2013","16",NA
-"Victor Ortiz",NA,"Professional boxer","Eliminated 4thon April 23, 2013","16",NA
-"Andy Dick",NA,"Actor & comedian","Eliminated 5thon April 30, 2013","16",NA
-"Sean Lowe",NA,"Reality television personality","Eliminated 6thon May 7, 2013","16",NA
-"Ingo Rademacher",NA,"General Hospital actor","Eliminated 7thon May 14, 2013","16",NA
-"Alexandra Raisman",NA,"Olympic artistic gymnast","Eliminated 8thon May 21, 2013","16",NA
-"Jacoby Jones",NA,"NFL wide receiver","Third placeon May 21, 2013","16",NA
-"Zendaya",NA,"Disney Channel actress","Runners-upon May 21, 2013","16",NA
-"Kellie Pickler",NA,"Country music singer and American Idol finalist","Winnerson May 21, 2013","16",NA
-"Keyshawn Johnson",NA,"NFL wide receiver","Eliminated 1ston September 23, 2013","17",NA
-"Bill Nye",NA,"Science education host","Eliminated 2ndon September 30, 2013","17",NA
-"Valerie Harper",NA,"Television actress","Eliminated 3rdon October 7, 2013","17",NA
-"Christina Milian",NA,"Singer & actress","Eliminated 4thon October 14, 2013","17",NA
-"Nicole ""Snooki"" Polizzi",NA,"Jersey Shore cast member","Eliminated 5thon October 28, 2013","17",NA
-"Brant Daugherty",NA,"Pretty Little Liars actor","Eliminated 6thon November 4, 2013","17",NA
-"Elizabeth Berkley Lauren",NA,"Film & television actress","Eliminated 7thon November 11, 2013","17",NA
-"Leah Remini",NA,"Television actress","Eliminated 8thon November 18, 2013","17",NA
-"Bill Engvall",NA,"Stand-up comedian & actor","Eliminated 9thon November 25, 2013","17",NA
-"Jack Osbourne",NA,"Reality television personality","Third placeon November 26, 2013","17",NA
-"Corbin Bleu",NA,"High School Musical actor","Runners-upon November 26, 2013","17",NA
-"Amber Riley",NA,"Glee actress","Winnerson November 26, 2013","17",NA
-"Diana Nyad",NA,"Long-distance swimmer","Eliminated 1ston March 24, 2014","18",NA
-"Sean Avery",NA,"NHL player","Eliminated 2ndon March 24, 2014","18",NA
-"Billy Dee Williams",NA,"Movie actor","Withdrewon March 31, 2014","18",NA
-"Cody Simpson",NA,"Singer-songwriter","Eliminated 3rdon April 14, 2014","18",NA
-"Drew Carey",NA,"Television host, actor & comedian","Eliminated 4thon April 21, 2014","18",NA
-"NeNe Leakes",NA,"Reality television personality & actress","Eliminated 5thon April 28, 2014","18",NA
-"Danica McKellar",NA,"The Wonder Years actress & author","Eliminated 6thon May 5, 2014","18",NA
-"Charlie White",NA,"Olympic ice dancer","Eliminated 7thon May 12, 2014","18",NA
-"James Maslow",NA,"Big Time Rush singer & actor","Eliminated 8thon May 19, 2014","18",NA
-"Candace Cameron Bure",NA,"Full House actress & author","Third placeon May 20, 2014","18",NA
-"Amy Purdy",NA,"Paralympic snowboarder","Runners-upon May 20, 2014","18",NA
-"Meryl Davis",NA,"Olympic ice dancer","Winnerson May 20, 2014","18",NA
-"Lolo Jones",NA,"Olympic athlete","Eliminated 1ston September 16, 2014","19",NA
-"Tavis Smiley",NA,"Television & radio broadcaster","Eliminated 2ndon September 23, 2014","19",NA
-"Randy Couture",NA,"UFC mixed martial artist","Eliminated 3rdon September 29, 2014","19",NA
-"Betsey Johnson",NA,"Fashion designer","Eliminated 4thon October 6, 2014","19",NA
-"Jonathan Bennett",NA,"Mean Girls actor","Eliminated 5thon October 20, 2014","19",NA
-"Antonio Sabàto Jr.",NA,"General Hospital actor & model","Eliminated 6thon October 27, 2014","19",NA
-"Michael Waltrip",NA,"NASCAR racer","Eliminated 7thon November 3, 2014","19",NA
-"Lea Thompson",NA,"Film & television actress","Eliminated 8thon November 10, 2014","19",NA
-"Tommy Chong",NA,"Comedian & actor","Eliminated 9thon November 17, 2014","19",NA
-"Bethany Mota",NA,"YouTube personality","Eliminated 10thon November 24, 2014","19",NA
-"Janel Parrish",NA,"Pretty Little Liars actress","Third placeon November 25, 2014","19",NA
-"Sadie Robertson",NA,"Duck Dynasty cast member","Runners-upon November 25, 2014","19",NA
-"Alfonso Ribeiro",NA,"Television actor","Winnerson November 25, 2014","19",NA
-"Redfoo",NA,"LMFAO singer, producer & rapper","Eliminated 1ston March 23, 2015","20",NA
-"Charlotte McKinney",NA,"Model & actress","Eliminated 2ndon March 30, 2015","20",NA
-"Michael Sam",NA,"NFL defensive end","Eliminated 3rdon April 6, 2015","20",NA
-"Suzanne Somers",NA,"Television actress & author","Eliminated 4thon April 13, 2015","20",NA
-"Patti LaBelle",NA,"Soul singer","Eliminated 5thon April 20, 2015","20",NA
-"Willow Shields",NA,"The Hunger Games actress","Eliminated 6thon April 27, 2015","20",NA
-"Robert Herjavec",NA,"Shark Tank panelist & businessman","Eliminated 7thon May 5, 2015","20",NA
-"Chris Soules",NA,"The Bachelor star","Eliminated 8thon May 5, 2015","20",NA
-"Nastia Liukin",NA,"Olympic artistic gymnast","Eliminated 9thon May 12, 2015","20",NA
-"Noah Galloway",NA,"Soldier & personal trainer","Third placeon May 19, 2015","20",NA
-"Riker Lynch",NA,"R5 singer & actor","Runners-upon May 19, 2015","20",NA
-"Rumer Willis",NA,"Film & television actress","Winnerson May 19, 2015","20",NA
-"Chaka Khan",NA,"Funk & R&B singer","Eliminated 1ston September 21, 2015","21",NA
-"Victor Espinoza",NA,"Jockey","Eliminated 2ndon September 22, 2015","21",NA
-"Kim Zolciak-Biermann",NA,"Reality television personality","Withdrewon September 28, 2015","21",NA
-"Gary Busey",NA,"Film actor","Eliminated 3rdon October 5, 2015","21",NA
-"Paula Deen",NA,"Celebrity chef & businesswoman","Eliminated 4thon October 19, 2015","21",NA
-"Hayes Grier",NA,"Vine & social media personality","Eliminated 5thon October 26, 2015","21",NA
-"Andy Grammer",NA,"Singer-songwriter","Eliminated 6thon November 2, 2015","21",NA
-"Alexa PenaVega",NA,"Film & television actress","Eliminated 7thon November 9, 2015","21",NA
-"Tamar Braxton",NA,"R&B singer & reality television personality","Withdrewon November 11, 2015","21",NA
-"Carlos PenaVega",NA,"Big Time Rush singer & actor","Eliminated 8thon November 23, 2015","21",NA
-"Alek Skarlatos",NA,"Legion of Honor recipient & soldier","Third placeon November 24, 2015","21",NA
-"Nick Carter",NA,"Backstreet Boys singer","Runners-upon November 24, 2015","21",NA
-"Bindi Irwin",NA,"Wildlife conservationist & actress","Winnerson November 24, 2015","21",NA
-"Geraldo Rivera",NA,"Journalist & talk show host","Eliminated 1ston March 28, 2016","22",NA
-"Mischa Barton",NA,"Film & television actress","Eliminated 2ndon April 4, 2016","22",NA
-"Marla Maples",NA,"Actress & television personality","Eliminated 3rdon April 11, 2016","22",NA
-"Doug Flutie",NA,"NFL quarterback","Eliminated 4thon April 25, 2016","22",NA
-"Kim Fields",NA,"Actress & reality television personality","Eliminated 5th & 6thon May 2, 2016","22",NA
-"Von Miller",NA,"NFL linebacker","Eliminated 5th & 6thon May 2, 2016","22",NA
-"Jodie Sweetin",NA,"Full House actress","Eliminated 7thon May 9, 2016","22",NA
-"Antonio Brown",NA,"NFL wide receiver","Eliminated 8th & 9thon May 16, 2016","22",NA
-"Wanyá Morris",NA,"Boyz II Men singer","Eliminated 8th & 9thon May 16, 2016","22",NA
-"Ginger Zee",NA,"Good Morning America meteorologist","Third placeon May 24, 2016","22",NA
-"Paige VanZant",NA,"UFC fighter & model","Runners-upon May 24, 2016","22",NA
-"Nyle DiMarco",NA,"Model & actor","Winnerson May 24, 2016","22",NA
-"Jake T. Austin",NA,"Actor","Eliminated 1ston September 20, 2016","23",NA
-"Rick Perry",NA,"Governor of Texas","Eliminated 2ndon September 27, 2016","23",NA
-"Babyface",NA,"Singer-songwriter & record producer","Eliminated 3rd & 4thon October 4, 2016","23",NA
-"Vanilla Ice",NA,"Rapper & actor","Eliminated 3rd & 4thon October 4, 2016","23",NA
-"Amber Rose",NA,"Model & actress","Eliminated 5thon October 17, 2016","23",NA
-"Maureen McCormick",NA,"Actress & author","Eliminated 6thon October 24, 2016","23",NA
-"Ryan Lochte",NA,"Olympic swimmer","Eliminated 7thon October 31, 2016","23",NA
-"Marilu Henner",NA,"Actress, broadcaster & author","Eliminated 8thon November 7, 2016","23",NA
-"Terra Jolé",NA,"Reality television personality","Eliminated 9thon November 14, 2016","23",NA
-"Jana Kramer",NA,"Country music singer & actress","Eliminated 10thon November 21, 2016","23",NA
-"Calvin Johnson Jr.",NA,"NFL wide receiver","Third placeon November 22, 2016","23",NA
-"James Hinchcliffe",NA,"IndyCar driver","Runners-upon November 22, 2016","23",NA
-"Laurie Hernandez",NA,"Olympic artistic gymnast","Winnerson November 22, 2016","23",NA
-"Chris Kattan",NA,"Actor & comedian","Eliminated 1ston March 27, 2017","24",NA
-"Charo",NA,"Actress, comedian & musician","Eliminated 2ndon April 3, 2017","24",NA
-"Mr. T",NA,"Actor & wrestler","Eliminated 3rdon April 10, 2017","24",NA
-"Erika Jayne",NA,"Singer & reality television personality","Eliminated 4thon April 17, 2017","24",NA
-"Heather Morris",NA,"Glee actress & dancer","Eliminated 5thon April 24, 2017","24",NA
-"Nancy Kerrigan",NA,"Olympic figure skater","Eliminated 6th & 7thon May 1, 2017","24",NA
-"Nick Viall",NA,"The Bachelor star","Eliminated 6th & 7thon May 1, 2017","24",NA
-"Bonner Bolton",NA,"Model & bull rider","Eliminated 8thon May 8, 2017","24",NA
-"Simone Biles",NA,"Olympic artistic gymnast","Eliminated 9thon May 15, 2017","24",NA
-"Normani",NA,"Fifth Harmony singer","Third placeon May 23, 2017","24",NA
-"David Ross",NA,"MLB catcher","Runners-upon May 23, 2017","24",NA
-"Rashad Jennings",NA,"NFL running back","Winnerson May 23, 2017","24",NA
-"Barbara Corcoran",NA,"Shark Tank panelist & businesswoman","Eliminated 1ston September 25, 2017","25",NA
-"Debbie Gibson",NA,"Singer-songwriter & Broadway actress","Eliminated 2ndon September 26, 2017","25",NA
-"Derek Fisher",NA,"NBA point guard","Eliminated 3rdon October 9, 2017","25",NA
-"Sasha Pieterse",NA,"Pretty Little Liars actress","Eliminated 4thon October 16, 2017","25",NA
-"Nick Lachey",NA,"98 Degrees singer","Eliminated 5thon October 23, 2017","25",NA
-"Nikki Bella",NA,"WWE Diva Search contestant & WWE wrestler","Eliminated 6th & 7thon October 30, 2017","25",NA
-"Vanessa Lachey",NA,"Actress & television host","Eliminated 6th & 7thon October 30, 2017","25",NA
-"Terrell Owens",NA,"NFL wide receiver","Eliminated 8thon November 6, 2017","25",NA
-"Victoria Arlen",NA,"Paralympic swimmer & ESPN host","Eliminated 9thon November 13, 2017","25",NA
-"Drew Scott",NA,"Property Brothers co-host","Eliminated 10thon November 20, 2017","25",NA
-"Frankie Muniz",NA,"Actor & race car driver","Third placeon November 21, 2017","25",NA
-"Lindsey Stirling",NA,"Violinist & composer","Runners-upon November 21, 2017","25",NA
-"Jordan Fisher",NA,"Actor & singer","Winnerson November 21, 2017","25",NA
-"Jamie Anderson",NA,"Olympic snowboarder","Eliminated 1st & 2ndon April 30, 2018","26",NA
-"Johnny Damon",NA,"MLB outfielder","Eliminated 1st & 2ndon April 30, 2018","26",NA
-"Kareem Abdul-Jabbar",NA,"NBA center","Eliminated 3rd & 4thon May 7, 2018","26",NA
-"Arike Ogunbowale",NA,"Women's basketball player","Eliminated 3rd & 4thon May 7, 2018","26",NA
-"Jennie Finch Daigle",NA,"Olympic softball pitcher","Eliminated 5th, 6th & 7thon May 14, 2018","26",NA
-"Chris Mazdzer",NA,"Olympic luger","Eliminated 5th, 6th & 7thon May 14, 2018","26",NA
-"Mirai Nagasu",NA,"Olympic figure skater","Eliminated 5th, 6th & 7thon May 14, 2018","26",NA
-"Tonya Harding",NA,"Olympic figure skater","Third placeon May 21, 2018","26",NA
-"Josh Norman",NA,"NFL cornerback","Runners-upon May 21, 2018","26",NA
-"Adam Rippon",NA,"Olympic figure skater","Winnerson May 21, 2018","26",NA
-"Nikki Glaser",NA,"Comedian & podcast host","Eliminated 1ston September 25, 2018","27",NA
-"Danelle Umstead",NA,"Paralympic alpine skier","Eliminated 2ndon October 2, 2018","27",NA
-"Nancy McKeon",NA,"The Facts of Life actress","Eliminated 3rdon October 8, 2018","27",NA
-"Tinashe",NA,"Singer-songwriter","Eliminated 4thon October 15, 2018","27",NA
-"Mary Lou Retton",NA,"Olympic artistic gymnast","Eliminated 5thon October 29, 2018","27",NA
-"John Schneider",NA,"Actor & country music singer","Eliminated 6th & 7thon November 5, 2018","27",NA
-"DeMarcus Ware",NA,"NFL linebacker","Eliminated 6th & 7thon November 5, 2018","27",NA
-"Joe Amabile",NA,"Reality television personality","Eliminated 8th & 9thon November 12, 2018","27",NA
-"Juan Pablo Di Pace",NA,"Fuller House actor","Eliminated 8th & 9thon November 12, 2018","27",NA
-"Alexis Ren",NA,"Model & social media personality","Fourth placeon November 19, 2018","27",NA
-"Evanna Lynch",NA,"Harry Potter actress & activist","Third placeon November 19, 2018","27",NA
-"Milo Manheim",NA,"Disney Channel actor","Runners-upon November 19, 2018","27",NA
-"Bobby Bones",NA,"Radio personality","Winnerson November 19, 2018","27",NA
-"Mary Wilson",NA,"The Supremes singer","Eliminated 1ston September 23, 2019","28",NA
-"Ray Lewis",NA,"NFL linebacker for Baltimore Ravens","Withdrewon September 30, 2019","28",NA
-"Lamar Odom",NA,"NBA forward","Eliminated 2ndon October 7, 2019","28",NA
-"Sailor Brinkley-Cook",NA,"Model & daughter of Christie Brinkley","Eliminated 3rdon October 21, 2019","28",NA
-"Karamo Brown",NA,"Queer Eye cast member & activist","Eliminated 4thon October 28, 2019","28",NA
-"Kate Flannery",NA,"The Office actress","Eliminated 5thon November 4, 2019","28",NA
-"Sean Spicer",NA,"White House Press Secretary","Eliminated 6thon November 11, 2019","28",NA
-"James Van Der Beek",NA,"Dawson's Creek actor","Eliminated 7thon November 18, 2019","28",NA
-"Lauren Alaina",NA,"Country singer","Fourth placeon November 25, 2019","28",NA
-"Ally Brooke",NA,"Fifth Harmony singer","Third placeon November 25, 2019","28",NA
-"Kel Mitchell",NA,"Actor & comedian","Runners-upon November 25, 2019","28",NA
-"Hannah Brown",NA,"The Bachelorette star","Winnerson November 25, 2019","28",NA
-"Anna Delvey",NA,"Con artist","Eliminated 1st & 2ndon September 24, 2024","33",NA
-"Tori Spelling",NA,"Film & television actress","Eliminated 1st & 2ndon September 24, 2024","33",NA
-"Eric Roberts",NA,"Film & television actor","Eliminated 3rd & 4thon October 8, 2024","33",NA
-"Reginald VelJohnson",NA,"Film & television actor","Eliminated 3rd & 4thon October 8, 2024","33",NA
-"Brooks Nader",NA,"Model","Eliminated 5thon October 15, 2024","33",NA
-"Phaedra Parks",NA,"Reality television personality","Eliminated 6thon October 22, 2024","33",NA
-"Jenn Tran",NA,"The Bachelorette star","Eliminated 7thon October 29, 2024","33",NA
-"Dwight Howard",NA,"NBA center","Eliminated 8thon November 12, 2024","33",NA
-"Danny Amendola",NA,"NFL wide receiver","Fifth placeon November 26, 2024","33",NA
-"Stephen Nedoroscik",NA,"Olympic artistic gymnast","Fourth placeon November 26, 2024","33",NA
-"Chandler Kinney",NA,"Television actress & singer","Third placeon November 26, 2024","33",NA
-"Ilona Maher",NA,"Olympic rugby player","Runners-upon November 26, 2024","33",NA
-"Joey Graziadei",NA,"The Bachelor star","Winnerson November 26, 2024","33",NA
-"Conner Leavitt",NA,"The Secret Lives of Mormon Wives cast member","Eliminated 1ston September 15, 2026","35",NA
-"Sarah Jane Nader",NA,"Love Thy Nader star","Eliminated 2ndon September 16, 2026","35",NA
-"Giada De Laurentiis",NA,"Celebrity chef & entrepreneur","Eliminated 3rdon September 22, 2026","35",NA
-"Taylor Hanson",NA,"Hanson frontman","Eliminated 4thon September 29, 2026","35",NA
-"Ciara Miller",NA,"Summer House cast member","Eliminated 5thon October 6, 2026","35",NA
-"Guillermo Rodriguez",NA,"Jimmy Kimmel Live! sidekick","Eliminated 6thon October 13, 2026","35",NA
-"Tyler Cameron",NA,"The Bachelorette runner-up","Eliminated 7th & 8thon October 27, 2026","35",NA
-"Jackson Olson",NA,"Savannah Bananas second baseman","Eliminated 7th & 8thon October 27, 2026","35",NA
-"Julia Stiles",NA,"Actress & director","Eliminated 9thon November 2, 2026","35",NA
-"Jenna Dewan",NA,"Actress & dancer","Eliminated 10thon November 10, 2026","35",NA
-"Harry Shum Jr.",NA,"Actor & dancer","Eliminated 11thon November 17, 2026","35",NA
-"Tatyana Ali",NA,"Television actress & singer","Finalist","35",NA
-"Ezra Frech",NA,"Paralympic track & field athlete","Finalist","35",NA
-"Amber Glenn",NA,"Olympic figure skater","Finalist","35",NA
-"Maura Higgins",NA,"Television personality & model","Finalist","35",NA
-"Connor Wood",NA,"Stand-up comedian & podcaster","Finalist","35",NA
-=======
 Celebrity,Notability,Status,season,age_on_show
 Trista Sutter,The Bachelorette star,"Eliminated 1ston June 8, 2005",1,32
 Evander Holyfield,Heavyweight boxer,"Eliminated 2ndon June 15, 2005",1,42
@@ -371,12 +5,12 @@ Rachel Hunter,Supermodel,"Eliminated 3rdon June 22, 2005",1,35
 Joey McIntyre,New Kids on the Block singer,"Eliminated 4thon June 29, 2005",1,32
 John O'Hurley,Television actor & game show host,"Runners-upon July 6, 2005",1,50
 Kelly Monaco,General Hospital actress,"Winners on July 6, 2005",1,29
-Kenny Mayne,ESPN anchorman,"Eliminated 1ston January 6, 2006",2,NA
+Kenny Mayne,ESPN anchorman,"Eliminated 1ston January 6, 2006",2,46
 Tatum O'Neal,Film actress,"Eliminated 2ndon January 13, 2006",2,42
 Giselle Fernandez,Television journalist,"Eliminated 3rdon January 20, 2006",2,44
 Master P,Rapper & entrepreneur,"Eliminated 4thon January 27, 2006",2,35
 Tia Carrere,Actress & model,"Eliminated 5thon February 3, 2006",2,38
-George Hamilton,Actor,"Eliminated 6thon February 10, 2006",2,NA
+George Hamilton,Actor,"Eliminated 6thon February 10, 2006",2,66
 Lisa Rinna,Television actress & host,"Eliminated 7thon February 17, 2006",2,42
 Stacy Keibler,WWE Diva,"Third placeon February 26, 2006",2,26
 Jerry Rice,NFL wide receiver,"Runners-upon February 26, 2006",2,43
@@ -404,17 +38,17 @@ Laila Ali,Professional boxer,"Third placeon May 22, 2007",4,29
 Joey Fatone,NSYNC singer & actor,"Runners-upon May 22, 2007",4,30
 Apolo Anton Ohno,Olympic speed skater,"Winnerson May 22, 2007",4,24
 Josie Maran,Model & actress,"Eliminated 1ston September 25, 2007",5,29
-Albert Reed,Supermodel,"Eliminated 2ndon October 2, 2007",5,NA
+Albert Reed,Supermodel,"Eliminated 2ndon October 2, 2007",5,22
 Wayne Newton,Las Vegas entertainer,"Eliminated 3rdon October 9, 2007",5,65
 Floyd Mayweather Jr.,Professional boxer,"Eliminated 4thon October 16, 2007",5,30
 Mark Cuban,Dallas Mavericks owner & entrepreneur,"Eliminated 5thon October 23, 2007",5,49
 Sabrina Bryan,The Cheetah Girls singer & actress,"Eliminated 6thon October 30, 2007",5,23
-Jane Seymour,Film & television actress,"Eliminated 7thon November 6, 2007",5,NA
+Jane Seymour,Film & television actress,"Eliminated 7thon November 6, 2007",5,56
 Cameron Mathison,All My Children actor & TV host,"Eliminated 8thon November 13, 2007",5,38
 Jennie Garth,Television actress,"Eliminated 9thon November 20, 2007",5,35
 Marie Osmond,Entertainer,"Third placeon November 27, 2007",5,47
 Mel B,Spice Girls singer,"Runners-upon November 27, 2007",5,32
-Hélio Castroneves,Indy 500 champion,"Winnerson November 27, 2007",5,32
+H�lio Castroneves,Indy 500 champion,"Winnerson November 27, 2007",5,32
 Penn Jillette,Magician,"Eliminated 1ston March 25, 2008",6,53
 Monica Seles,Professional tennis player,"Eliminated 2ndon March 25, 2008",6,34
 Steve Guttenberg,Film actor,"Eliminated 3rdon April 1, 2008",6,49
@@ -422,10 +56,10 @@ Adam Carolla,Comedian & radio host,"Eliminated 4thon April 8, 2008",6,43
 Priscilla Presley,Actress & businesswoman,"Eliminated 5thon April 15, 2008",6,62
 Marlee Matlin,Film & television actress,"Eliminated 6thon April 22, 2008",6,42
 Shannon Elizabeth,American Pie actress,"Eliminated 7thon April 29, 2008",6,34
-Mario,R&B singer,"Eliminated 8thon May 6, 2008",6,NA
+Mario,R&B singer,"Eliminated 8thon May 6, 2008",6,35
 Marissa Jaret Winokur,Broadway actress,"Eliminated 9thon May 13, 2008",6,35
 Cristián de la Fuente,Film & television actor,"Third placeon May 19, 2008",6,34
-Jason Taylor,NFL defensive end,"Runners-upon May 20, 2008",6,NA
+Jason Taylor,NFL defensive end,"Runners-upon May 20, 2008",6,33
 Kristi Yamaguchi,Olympic figure skater,"Winnerson May 20, 2008",6,36
 Jeffrey Ross,Stand-up comedian,"Eliminated 1ston September 23, 2008",7,43
 Ted McGinley,Film & television actor,"Eliminated 2ndon September 24, 2008",7,50
@@ -435,7 +69,7 @@ Rocco DiSpirito,Celebrity chef & author,"Eliminated 4thon October 14, 2008",7,41
 Toni Braxton,Singer-songwriter,"Eliminated 5thon October 21, 2008",7,40
 Cloris Leachman,Film & television actress,"Eliminated 6thon October 28, 2008",7,82
 Susan Lucci,All My Children actress,"Eliminated 7thon November 5, 2008",7,61
-Maurice Greene,Olympic sprinter,"Eliminated 8thon November 11, 2008",7,NA
+Maurice Greene,Olympic sprinter,"Eliminated 8thon November 11, 2008",7,34
 Cody Linley,Hannah Montana actor,"Eliminated 9thon November 18, 2008",7,18
 Lance Bass,NSYNC singer,"Third placeon November 25, 2008",7,29
 Warren Sapp,NFL defensive tackle,"Runners-upon November 25, 2008",7,35
@@ -483,12 +117,12 @@ Nicole Scherzinger,Pussycat Dolls singer,"Winnerson May 25, 2010",10,31
 David Hasselhoff,Actor & singer,"Eliminated 1ston September 21, 2010",11,58
 Michael Bolton,Singer-songwriter,"Eliminated 2ndon September 28, 2010",11,57
 Margaret Cho,Stand-up comedian,"Eliminated 3rdon October 5, 2010",11,41
-The Situation,Jersey Shore cast member,"Eliminated 4thon October 12, 2010",11,NA
+The Situation,Jersey Shore cast member,"Eliminated 4thon October 12, 2010",11,28
 Florence Henderson,The Brady Bunch actress,"Eliminated 5thon October 19, 2010",11,76
 Audrina Patridge,The Hills cast member,"Eliminated 6thon October 26, 2010",11,25
 Rick Fox,NBA small forward,"Eliminated 7thon November 2, 2010",11,41
 Kurt Warner,NFL quarterback,"Eliminated 8thon November 9, 2010",11,39
-Brandy,Singer & actress,"Eliminated 9thon November 16, 2010",11,NA
+Brandy,Singer & actress,"Eliminated 9thon November 16, 2010",11,31
 Bristol Palin,"Activist, author & daughter of Sarah Palin","Third placeon November 23, 2010",11,19
 Kyle Massey,Disney Channel actor & rapper,"Runners-upon November 23, 2010",11,19
 Jennifer Grey,Film & television actress,"Winnerson November 23, 2010",11,50
@@ -497,8 +131,8 @@ Wendy Williams,Talk show host & author,"Eliminated 2ndon April 5, 2011",12,46
 Sugar Ray Leonard,Professional boxer,"Eliminated 3rdon April 12, 2011",12,54
 Petra Němcová,Supermodel,"Eliminated 4thon April 19, 2011",12,31
 Chris Jericho,Professional wrestler and Musician,"Eliminated 5thon April 26, 2011",12,40
-Kendra Wilkinson,Model & reality television personality,"Eliminated 6thon May 3, 2011",12,NA
-Romeo,Rapper & actor,"Eliminated 7thon May 10, 2011",12,NA
+Kendra Wilkinson,Model & reality television personality,"Eliminated 6thon May 3, 2011",12,25
+Romeo,Rapper & actor,"Eliminated 7thon May 10, 2011",12,21
 Ralph Macchio,Film actor,"Eliminated 8thon May 17, 2011",12,49
 Chelsea Kane,Disney Channel actress,"Third placeon May 24, 2011",12,22
 Kirstie Alley,Film & television actress,"Runners-upon May 24, 2011",12,60
@@ -516,7 +150,7 @@ Ricki Lake,Actress & talk show host,"Third placeon November 22, 2011",13,42
 Rob Kardashian,Reality television personality,"Runners-upon November 22, 2011",13,24
 J. R. Martinez,Actor & Army veteran,"Winnerson November 22, 2011",13,28
 Martina Navratilova,Professional tennis player,"Eliminated 1ston March 27, 2012",14,55
-Jack Wagner,Actor & singer,"Eliminated 2ndon April 3, 2012",14,NA
+Jack Wagner,Actor & singer,"Eliminated 2ndon April 3, 2012",14,52
 Sherri Shepherd,The View panelist & actress,"Eliminated 3rdon April 10, 2012",14,44
 Gavin DeGraw,Singer-songwriter,"Eliminated 4thon April 17, 2012",14,35
 Gladys Knight,Soul singer,"Eliminated 5thon April 24, 2012",14,67
@@ -524,29 +158,29 @@ Jaleel White,Television actor,"Eliminated 6thon May 1, 2012",14,35
 Roshon Fegan,Disney Channel actor & rapper,"Eliminated 7thon May 8, 2012",14,20
 Melissa Gilbert,Actress,"Eliminated 8thon May 8, 2012",14,47
 Maria Menounos,Television host,"Eliminated 9thon May 15, 2012",14,33
-William Levy,Telenovela actor,"Third placeon May 22, 2012",14,NA
+William Levy,Telenovela actor,"Third placeon May 22, 2012",14,31
 Katherine Jenkins,Classical singer,"Runners-upon May 22, 2012",14,31
 Donald Driver,NFL wide receiver for Green Bay Packers,"Winnerson May 22, 2012",14,37
-Pamela AndersonSeason 10,Film & television actress,"Eliminated 1ston September 25, 2012",15,NA
-Joey FatoneSeason 4,NSYNC singer & actor,"Eliminated 2ndon October 2, 2012",15,NA
-Drew LacheySeason 2,Singer & actor,"Eliminated 3rdon October 9, 2012",15,NA
-Hélio CastronevesSeason 5,Indy 500 champion,"Eliminated 4thon October 9, 2012",15,NA
-Bristol PalinSeason 11,Activist & author,"Eliminated 5thon October 16, 2012",15,NA
-Sabrina BryanSeason 5,Singer & actress,"Eliminated 6thon October 30, 2012",15,NA
-Kirstie AlleySeason 12,Film & television actress,"Eliminated 7thon November 13, 2012",15,NA
-Gilles MariniSeason 8,Film & television actor,"Eliminated 8thon November 13, 2012",15,NA
-Apolo Anton OhnoSeason 4,Olympic speed skater,"Eliminated 9thon November 20, 2012",15,NA
-Emmitt SmithSeason 3,NFL player,"Eliminated 10thon November 20, 2012",15,NA
-Kelly MonacoSeason 1,Model & actress,"Third placeon November 27, 2012",15,NA
-Shawn JohnsonSeason 8,Olympic artistic gymnast,"Runners-upon November 27, 2012",15,NA
-Melissa RycroftSeason 8,Television host,"Winnerson November 27, 2012",15,NA
+Pamela AndersonSeason 10,Film & television actress,"Eliminated 1ston September 25, 2012",15,45
+Joey FatoneSeason 4,NSYNC singer & actor,"Eliminated 2ndon October 2, 2012",15,35
+Drew LacheySeason 2,Singer & actor,"Eliminated 3rdon October 9, 2012",15,36
+Hélio CastronevesSeason 5,Indy 500 champion,"Eliminated 4thon October 9, 2012",15,37
+Bristol PalinSeason 11,Activist & author,"Eliminated 5thon October 16, 2012",15,21
+Sabrina BryanSeason 5,Singer & actress,"Eliminated 6thon October 30, 2012",15,28
+Kirstie AlleySeason 12,Film & television actress,"Eliminated 7thon November 13, 2012",15,61
+Gilles MariniSeason 8,Film & television actor,"Eliminated 8thon November 13, 2012",15,36
+Apolo Anton OhnoSeason 4,Olympic speed skater,"Eliminated 9thon November 20, 2012",15,30
+Emmitt SmithSeason 3,NFL player,"Eliminated 10thon November 20, 2012",15,43
+Kelly MonacoSeason 1,Model & actress,"Third placeon November 27, 2012",15,36
+Shawn JohnsonSeason 8,Olympic artistic gymnast,"Runners-upon November 27, 2012",15,20
+Melissa RycroftSeason 8,Television host,"Winnerson November 27, 2012",15,29
 Dorothy Hamill,Olympic figure skater,"Withdrewon March 26, 2013",16,56
 Wynonna Judd,Country music singer,"Eliminated 1ston April 2, 2013",16,48
 Lisa Vanderpump,Reality television personality,"Eliminated 2ndon April 9, 2013",16,52
 D.L. Hughley,Comedian & television actor,"Eliminated 3rdon April 16, 2013",16,50
 Victor Ortiz,Professional boxer,"Eliminated 4thon April 23, 2013",16,26
 Andy Dick,Actor & comedian,"Eliminated 5thon April 30, 2013",16,47
-Sean Lowe,Reality television personality,"Eliminated 6thon May 7, 2013",16,NA
+Sean Lowe,Reality television personality,"Eliminated 6thon May 7, 2013",16,29
 Ingo Rademacher,General Hospital actor,"Eliminated 7thon May 14, 2013",16,41
 Alexandra Raisman,Olympic artistic gymnast,"Eliminated 8thon May 21, 2013",16,18
 Jacoby Jones,NFL wide receiver,"Third placeon May 21, 2013",16,28
@@ -558,7 +192,7 @@ Valerie Harper,Television actress,"Eliminated 3rdon October 7, 2013",17,74
 Christina Milian,Singer & actress,"Eliminated 4thon October 14, 2013",17,31
 "Nicole ""Snooki"" Polizzi",Jersey Shore cast member,"Eliminated 5thon October 28, 2013",17,25
 Brant Daugherty,Pretty Little Liars actor,"Eliminated 6thon November 4, 2013",17,28
-Elizabeth Berkley Lauren,Film & television actress,"Eliminated 7thon November 11, 2013",17,NA
+Elizabeth Berkley Lauren,Film & television actress,"Eliminated 7thon November 11, 2013",17,41
 Leah Remini,Television actress,"Eliminated 8thon November 18, 2013",17,43
 Bill Engvall,Stand-up comedian & actor,"Eliminated 9thon November 25, 2013",17,56
 Jack Osbourne,Reality television personality,"Third placeon November 26, 2013",17,27
@@ -566,12 +200,12 @@ Corbin Bleu,High School Musical actor,"Runners-upon November 26, 2013",17,24
 Amber Riley,Glee actress,"Winnerson November 26, 2013",17,27
 Diana Nyad,Long-distance swimmer,"Eliminated 1ston March 24, 2014",18,64
 Sean Avery,NHL player,"Eliminated 2ndon March 24, 2014",18,33
-Billy Dee Williams,Movie actor,"Withdrewon March 31, 2014",18,76
+Billy Dee Williams,Movie actor,"Eliminated / Withdrew on March 31, 2014",18,76
 Cody Simpson,Singer-songwriter,"Eliminated 3rdon April 14, 2014",18,17
 Drew Carey,"Television host, actor & comedian","Eliminated 4thon April 21, 2014",18,55
 NeNe Leakes,Reality television personality & actress,"Eliminated 5thon April 28, 2014",18,46
 Danica McKellar,The Wonder Years actress & author,"Eliminated 6thon May 5, 2014",18,39
-Charlie White,Olympic ice dancer,"Eliminated 7thon May 12, 2014",18,NA
+Charlie White,Olympic ice dancer,"Eliminated 7thon May 12, 2014",18,26
 James Maslow,Big Time Rush singer & actor,"Eliminated 8thon May 19, 2014",18,23
 Candace Cameron Bure,Full House actress & author,"Third placeon May 20, 2014",18,37
 Amy Purdy,Paralympic snowboarder,"Runners-upon May 20, 2014",18,34
@@ -580,7 +214,7 @@ Lolo Jones,Olympic athlete,"Eliminated 1ston September 16, 2014",19,32
 Tavis Smiley,Television & radio broadcaster,"Eliminated 2ndon September 23, 2014",19,49
 Randy Couture,UFC mixed martial artist,"Eliminated 3rdon September 29, 2014",19,51
 Betsey Johnson,Fashion designer,"Eliminated 4thon October 6, 2014",19,72
-Jonathan Bennett,Mean Girls actor,"Eliminated 5thon October 20, 2014",19,NA
+Jonathan Bennett,Mean Girls actor,"Eliminated 5thon October 20, 2014",19,33
 Antonio Sabàto Jr.,General Hospital actor & model,"Eliminated 6thon October 27, 2014",19,42
 Michael Waltrip,NASCAR racer,"Eliminated 7thon November 3, 2014",19,51
 Lea Thompson,Film & television actress,"Eliminated 8thon November 10, 2014",19,53
@@ -628,7 +262,7 @@ Paige VanZant,UFC fighter & model,"Runners-upon May 24, 2016",22,21
 Nyle DiMarco,Model & actor,"Winnerson May 24, 2016",22,26
 Jake T. Austin,Actor,"Eliminated 1ston September 20, 2016",23,21
 Rick Perry,Governor of Texas,"Eliminated 2ndon September 27, 2016",23,66
-Babyface,Singer-songwriter & record producer,"Eliminated 3rd & 4thon October 4, 2016",23,NA
+Babyface,Singer-songwriter & record producer,"Eliminated 3rd & 4thon October 4, 2016",23,57
 Vanilla Ice,Rapper & actor,"Eliminated 3rd & 4thon October 4, 2016",23,48
 Amber Rose,Model & actress,"Eliminated 5thon October 17, 2016",23,32
 Maureen McCormick,Actress & author,"Eliminated 6thon October 24, 2016",23,60
@@ -640,16 +274,16 @@ Calvin Johnson Jr.,NFL wide receiver,"Third placeon November 22, 2016",23,30
 James Hinchcliffe,IndyCar driver,"Runners-upon November 22, 2016",23,29
 Laurie Hernandez,Olympic artistic gymnast,"Winnerson November 22, 2016",23,16
 Chris Kattan,Actor & comedian,"Eliminated 1ston March 27, 2017",24,46
-Charo,"Actress, comedian & musician","Eliminated 2ndon April 3, 2017",24,NA
+Charo,"Actress, comedian & musician","Eliminated 2ndon April 3, 2017",24,66
 Mr. T,Actor & wrestler,"Eliminated 3rdon April 10, 2017",24,64
 Erika Jayne,Singer & reality television personality,"Eliminated 4thon April 17, 2017",24,45
-Heather Morris,Glee actress & dancer,"Eliminated 5thon April 24, 2017",24,NA
+Heather Morris,Glee actress & dancer,"Eliminated 5thon April 24, 2017",24,30
 Nancy Kerrigan,Olympic figure skater,"Eliminated 6th & 7thon May 1, 2017",24,47
 Nick Viall,The Bachelor star,"Eliminated 6th & 7thon May 1, 2017",24,36
 Bonner Bolton,Model & bull rider,"Eliminated 8thon May 8, 2017",24,29
 Simone Biles,Olympic artistic gymnast,"Eliminated 9thon May 15, 2017",24,20
 Normani,Fifth Harmony singer,"Third placeon May 23, 2017",24,20
-David Ross,MLB catcher,"Runners-upon May 23, 2017",24,NA
+David Ross,MLB catcher,"Runners-upon May 23, 2017",24,40
 Rashad Jennings,NFL running back,"Winnerson May 23, 2017",24,31
 Barbara Corcoran,Shark Tank panelist & businesswoman,"Eliminated 1ston September 25, 2017",25,68
 Debbie Gibson,Singer-songwriter & Broadway actress,"Eliminated 2ndon September 26, 2017",25,47
@@ -664,7 +298,7 @@ Drew Scott,Property Brothers co-host,"Eliminated 10thon November 20, 2017",25,39
 Frankie Muniz,Actor & race car driver,"Third placeon November 21, 2017",25,31
 Lindsey Stirling,Violinist & composer,"Runners-upon November 21, 2017",25,30
 Jordan Fisher,Actor & singer,"Winnerson November 21, 2017",25,23
-Jamie Anderson,Olympic snowboarder,"Eliminated 1st & 2ndon April 30, 2018",26,NA
+Jamie Anderson,Olympic snowboarder,"Eliminated 1st & 2ndon April 30, 2018",26,27
 Johnny Damon,MLB outfielder,"Eliminated 1st & 2ndon April 30, 2018",26,44
 Kareem Abdul-Jabbar,NBA center,"Eliminated 3rd & 4thon May 7, 2018",26,71
 Arike Ogunbowale,Women's basketball player,"Eliminated 3rd & 4thon May 7, 2018",26,21
@@ -679,7 +313,7 @@ Danelle Umstead,Paralympic alpine skier,"Eliminated 2ndon October 2, 2018",27,46
 Nancy McKeon,The Facts of Life actress,"Eliminated 3rdon October 8, 2018",27,52
 Tinashe,Singer-songwriter,"Eliminated 4thon October 15, 2018",27,25
 Mary Lou Retton,Olympic artistic gymnast,"Eliminated 5thon October 29, 2018",27,50
-John Schneider,Actor & country music singer,"Eliminated 6th & 7thon November 5, 2018",27,NA
+John Schneider,Actor & country music singer,"Eliminated 6th & 7thon November 5, 2018",27,58
 DeMarcus Ware,NFL linebacker,"Eliminated 6th & 7thon November 5, 2018",27,36
 Joe Amabile,Reality television personality,"Eliminated 8th & 9thon November 12, 2018",27,32
 Juan Pablo Di Pace,Fuller House actor,"Eliminated 8th & 9thon November 12, 2018",27,39
@@ -687,7 +321,7 @@ Alexis Ren,Model & social media personality,"Fourth placeon November 19, 2018",2
 Evanna Lynch,Harry Potter actress & activist,"Third placeon November 19, 2018",27,27
 Milo Manheim,Disney Channel actor,"Runners-upon November 19, 2018",27,17
 Bobby Bones,Radio personality,"Winnerson November 19, 2018",27,38
-Mary Wilson,The Supremes singer,"Eliminated 1ston September 23, 2019",28,NA
+Mary Wilson,The Supremes singer,"Eliminated 1ston September 23, 2019",28,75
 Ray Lewis,NFL linebacker for Baltimore Ravens,"Withdrewon September 30, 2019",28,44
 Lamar Odom,NBA forward,"Eliminated 2ndon October 7, 2019",28,39
 Sailor Brinkley-Cook,Model & daughter of Christie Brinkley,"Eliminated 3rdon October 21, 2019",28,21
@@ -715,9 +349,9 @@ Nelly,Rapper & singer,"Third placeon November 23, 2020",29,45
 Nev Schulman,Catfish host & producer,"Runners-upon November 23, 2020",29,35
 Kaitlyn Bristowe,The Bachelorette star,"Winnerson November 23, 2020",29,35
 Martin Kove,Film & television actor,"Eliminated 1ston September 27, 2021",30,74
-Christine Chiu,Bling Empire cast member,"Eliminated 2ndon October 4, 2021",30,0
+Christine Chiu,Bling Empire cast member,"Eliminated 2ndon October 4, 2021",30,38
 Brian Austin Green,Television actor,"Eliminated 3rdon October 12, 2021",30,48
-Matt James,The Bachelor star,"Eliminated 4thon October 12, 2021",30,NA
+Matt James,The Bachelor star,"Eliminated 4thon October 12, 2021",30,29
 Melanie C,Spice Girls singer,"Eliminated 5thon October 18, 2021",30,47
 Kenya Moore,The Real Housewives of Atlanta cast member,"Eliminated 6thon October 25, 2021",30,50
 "Mike ""The Miz"" Mizanin",WWE wrestler,"Eliminated 7thon November 1, 2021",30,40
@@ -729,7 +363,7 @@ Amanda Kloots,The Talk co-host,"Fourth placeon November 22, 2021",30,39
 Cody Rigsby,Peloton instructor & fitness personality,"Third placeon November 22, 2021",30,34
 JoJo Siwa,"YouTube personality, dancer & singer","Runners-upon November 22, 2021",30,18
 Iman Shumpert,NBA shooting guard,"Winnerson November 22, 2021",30,31
-Jason Lewis,Sex and the City actor,"Eliminated 1ston September 19, 2022",31,NA
+Jason Lewis,Sex and the City actor,"Eliminated 1ston September 19, 2022",31,51
 Teresa Giudice,The Real Housewives of New Jersey cast member,"Eliminated 2ndon September 26, 2022",31,50
 Cheryl Ladd,Charlie's Angels actress & author,"Eliminated 3rdon October 3, 2022",31,71
 Sam Champion,Good Morning America meteorologist,"Eliminated 4thon October 10, 2022",31,61
@@ -745,14 +379,14 @@ Shangela,Drag queen & RuPaul's Drag Race contestant,"Fourth placeon November 21,
 Wayne Brady,"Comedian, actor & television personality","Third placeon November 21, 2022",31,50
 Gabby Windey,The Bachelorette star,"Runners-upon November 21, 2022",31,31
 Charli D'Amelio,Social media personality & dancer,"Winnerson November 21, 2022",31,18
-Matt Walsh,Comedian & actor,"Eliminated 1ston September 26, 2023",32,NA
+Matt Walsh,Comedian & actor,"Eliminated 1ston September 26, 2023",32,58
 Jamie Lynn Spears,Zoey 101 actress & singer,"Eliminated 2ndon October 3, 2023",32,32
 Tyson Beckford,Supermodel,"Eliminated 3rdon October 10, 2023",32,52
 Adrian Peterson,NFL running back,"Eliminated 4thon October 17, 2023",32,38
 Mira Sorvino,Film & television actress,"Eliminated 5thon October 24, 2023",32,55
 Mauricio Umansky,Reality television personality & real estate broker,"Eliminated 6thon October 31, 2023",32,53
 Lele Pons,Social media personality & singer,"Eliminated 7thon November 7, 2023",32,27
-Barry Williams,The Brady Bunch actor,"Eliminated 8thon November 14, 2023",32,NA
+Barry Williams,The Brady Bunch actor,"Eliminated 8thon November 14, 2023",32,69
 Harry Jowsey,Too Hot to Handle contestant,"Eliminated 9thon November 21, 2023",32,26
 Alyson Hannigan,Film & television actress,"Fifth placeon December 5, 2023",32,49
 Charity Lawson,The Bachelorette star,"Fourth placeon December 5, 2023",32,27
@@ -764,7 +398,7 @@ Tori Spelling,Film & television actress,"Eliminated 1st & 2ndon September 24, 20
 Eric Roberts,Film & television actor,"Eliminated 3rd & 4thon October 8, 2024",33,68
 Reginald VelJohnson,Film & television actor,"Eliminated 3rd & 4thon October 8, 2024",33,72
 Brooks Nader,Model,"Eliminated 5thon October 15, 2024",33,27
-Phaedra Parks,Reality television personality,"Eliminated 6thon October 22, 2024",33,50
+Phaedra Parks,Reality television personality,"Eliminated 6thon October 22, 2024",33,52
 Jenn Tran,The Bachelorette star,"Eliminated 7thon October 29, 2024",33,26
 Dwight Howard,NBA center,"Eliminated 8thon November 12, 2024",33,38
 Danny Amendola,NFL wide receiver,"Fifth placeon November 26, 2024",33,38
@@ -786,12 +420,12 @@ Dylan Efron,Reality television personality,"Fourth placeon November 25, 2025",34
 Jordan Chiles,Olympic artistic gymnast,"Third placeon November 25, 2025",34,24
 Alix Earle,Social media personality,"Runners-upon November 25, 2025",34,24
 Robert Irwin,Wildlife conservationist & television presenter,"Winnerson November 25, 2025",34,21
-Conner Leavitt,The Secret Lives of Mormon Wives cast member,"Eliminated 1ston September 15, 2026",35,NA
-Sarah Jane Nader,Love Thy Nader star,"Eliminated 2ndon September 16, 2026",35,NA
+Conner Leavitt,The Secret Lives of Mormon Wives cast member,"Eliminated 1ston September 15, 2026",35,32
+Sarah Jane Nader,Love Thy Nader star,"Eliminated 2ndon September 16, 2026",35,56
 Giada De Laurentiis,Celebrity chef & entrepreneur,"Eliminated 3rdon September 22, 2026",35,56
 Taylor Hanson,Hanson frontman,"Eliminated 4thon September 29, 2026",35,43
 Ciara Miller,Summer House cast member,"Eliminated 5thon October 6, 2026",35,30
-Guillermo Rodriguez,Jimmy Kimmel Live! sidekick,"Eliminated 6thon October 13, 2026",35,NA
+Guillermo Rodriguez,Jimmy Kimmel Live! sidekick,"Eliminated 6thon October 13, 2026",35,55
 Tyler Cameron,The Bachelorette runner-up,"Eliminated 7th & 8thon October 27, 2026",35,33
 Jackson Olson,Savannah Bananas second baseman,"Eliminated 7th & 8thon October 27, 2026",35,28
 Julia Stiles,Actress & director,"Eliminated 9thon November 2, 2026",35,45
@@ -801,5 +435,4 @@ Tatyana Ali,Television actress & singer,Finalist,35,47
 Ezra Frech,Paralympic track & field athlete,Finalist,35,21
 Amber Glenn,Olympic figure skater,Finalist,35,26
 Maura Higgins,Television personality & model,Finalist,35,35
-Connor Wood,Stand-up comedian & podcaster,Finalist,35,NA
->>>>>>> b3676d90529dee3a64b9c3f96156332d27713ab1
+Connor Wood,Stand-up comedian & podcaster,Finalist,35,31
